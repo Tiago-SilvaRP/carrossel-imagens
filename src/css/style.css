@@ -1,0 +1,111 @@
+.container-carrossel {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-carrossel .slide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.container-carrossel .mostrar {
+    opacity: 1;
+}
+
+.slide-rosa {
+    background-image: url('../images/imagem-rosa.png');
+}
+
+.slide-verde {
+    background-image: url('../images/imagem-verde.png');
+}
+
+.slide-laranja {
+    background-image: url('../images/imagem-laranja.png');
+}
+
+.slide-azul {
+    background-image: url('../images/imagem-azul.png');
+}
+
+.seta-voltar,
+.seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar .imagem-seta,
+.seta-avancar .imagem-seta {
+    width: 50px;
+    height: 78px;
+}
+
+.seta-voltar {
+    left: 4%;
+}
+
+.seta-avancar{
+    right: 4%;
+}
+
+.seta-avancar .imagem-seta {
+    transform: rotate(180deg);
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.container-carrossel .slide .conteudo {
+    max-width: 620px;
+    background: #f0f0f0;
+    margin-left: 180px;
+    border-radius: 10px;
+    padding: 65px 60px;
+}
+
+.container-carrossel .slide .conteudo .titulo {
+    font-size: 50px;
+    font-weight: 400px;
+    padding-bottom: 80px;
+}
+
+.container-carrossel .slide .conteudo .texto {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 50px;
+}
+
+.container-carrossel .slide .conteudo .botao {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.container-carrossel .slide .conteudo .botao.rosa{
+    color: var(--rosa);
+}
+
+.container-carrossel .slide .conteudo .botao.verde{
+    color: var(--verde);
+}
+
+.container-carrossel .slide .conteudo .botao.laranja{
+    color: var(--laranja);
+}
+
+.container-carrossel .slide .conteudo .botao.azul {
+    color: var(--azul)
+}
